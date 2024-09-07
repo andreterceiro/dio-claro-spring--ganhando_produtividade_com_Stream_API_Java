@@ -1,3 +1,7 @@
+# Observação inicial
+
+Para as tarefas que eu, André de Paula Terceiro, realizarei relacionadas a este repositório, por favor veja [este arquivo](ANDRE.md).
+
 # Ganhando Produtividade com Stream API e Java
 
 - A Streams API traz uma nova opção para a manipulação de coleções em Java seguindo os princípios da programação funcional.
