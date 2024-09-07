@@ -11,6 +11,7 @@ class ResolucoesDesafios {
     public static void main(String[] args) {
         ResolucoesDesafios.resolucaoExercicio1();
         ResolucoesDesafios.inserirDivisorNaTela();
+        ResolucoesDesafios.resolucaoExercicio2();
     }
 
     /**
@@ -28,5 +29,23 @@ class ResolucoesDesafios {
 
     public static void inserirDivisorNaTela() {
         System.out.println("\n-------------------------------------------\n");
+    }
+
+    public static void resolucaoExercicio2() {
+        System.out.println(
+            "Exercício 2: " +
+            ResolucoesDesafios.numeros
+                .stream()
+                .reduce(0, (n1, n2) -> {
+                    // n1 is the accumulated value. We do not need to verify this value
+                    // If n2 is odd, we need to return the previous sum
+                    // Else, we need to return n1 + n2 (the previous sum with the new value)
+                    if (n2 % 2 == 1) {
+                        return n1;
+                    }
+                    return n2 + n1;
+               })
+               // See that we must not have a semicolon in the line above
+        );
     }
 }
