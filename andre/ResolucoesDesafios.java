@@ -10,6 +10,7 @@ class ResolucoesDesafios {
 
     public static void main(String[] args) {
         ResolucoesDesafios.resolucaoExercicio1();
+        ResolucoesDesafios.inserirDivisorNaTela();
     }
 
     /**
@@ -18,9 +19,14 @@ class ResolucoesDesafios {
      */
     public static void resolucaoExercicio1() {
         System.out.println(
+            "Exercício 1: " +
             ResolucoesDesafios.numeros
                 .stream()
                 .reduce(0, Integer::sum)
         );
+    }
+
+    public static void inserirDivisorNaTela() {
+        System.out.println("\n-------------------------------------------\n");
     }
 }
