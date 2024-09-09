@@ -17,6 +17,8 @@ class ResolucoesDesafios {
         ResolucoesDesafios.resolucaoExercicio3();
         ResolucoesDesafios.inserirDivisorNaTela();
         ResolucoesDesafios.resolucaoExercicio4();
+        ResolucoesDesafios.inserirDivisorNaTela();
+        ResolucoesDesafios.resolucaoExercicio5();
     }
 
     /**
@@ -80,7 +82,27 @@ class ResolucoesDesafios {
                 }
             });
 
-        System.out.println("Exercício 4:" + ret);
+        System.out.println("Exercício 4: " + ret);
 
+    }
+
+    public static void resolucaoExercicio5() {
+        int[] sumToMeanCalculation = {0};
+        short[] count = {0};
+
+        ResolucoesDesafios.numeros
+            .stream()
+            .forEach(n -> {
+                if (n > 5) {
+                    sumToMeanCalculation[0] += n;
+                    count[0]++;
+                }
+            });
+
+        try {
+            System.out.println("Exercício 5: " + (sumToMeanCalculation[0]/ count[0]));
+        } catch(ArithmeticException e) {
+            System.out.println("Exercício 5: 0");
+        }
     }
 }
