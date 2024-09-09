@@ -6,7 +6,7 @@ import java.util.List;
  * Please see the exercises in the file src/stream_api/README.md
  */
 class ResolucoesDesafios {
-    static List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5);
+    static List<Integer> numeros = Arrays.asList(4, 2, -1, 5, 3);
 
     public static void main(String[] args) {
         ResolucoesDesafios.resolucaoExercicio1();
