@@ -12,6 +12,8 @@ class ResolucoesDesafios {
         ResolucoesDesafios.resolucaoExercicio1();
         ResolucoesDesafios.inserirDivisorNaTela();
         ResolucoesDesafios.resolucaoExercicio2();
+        ResolucoesDesafios.inserirDivisorNaTela();
+        ResolucoesDesafios.resolucaoExercicio3();
     }
 
     /**
@@ -46,6 +48,21 @@ class ResolucoesDesafios {
                     return n2 + n1;
                })
                // See that we must not have a semicolon in the line above
+        );
+    }
+
+    public static void resolucaoExercicio3() {
+        Object[] numerosOrdenados = ResolucoesDesafios.numeros
+            .stream()
+            .sorted()
+            .toArray();
+
+        int menorNumero = (int) numerosOrdenados[0];
+
+        Boolean ret = (menorNumero > 0);
+
+        System.out.println(
+            "Exercício 3: " + ret
         );
     }
 }
