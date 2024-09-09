@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,6 +15,8 @@ class ResolucoesDesafios {
         ResolucoesDesafios.resolucaoExercicio2();
         ResolucoesDesafios.inserirDivisorNaTela();
         ResolucoesDesafios.resolucaoExercicio3();
+        ResolucoesDesafios.inserirDivisorNaTela();
+        ResolucoesDesafios.resolucaoExercicio4();
     }
 
     /**
@@ -64,5 +67,20 @@ class ResolucoesDesafios {
         System.out.println(
             "Exercício 3: " + ret
         );
+    }
+
+    public static void resolucaoExercicio4() {
+        List<Integer> ret = new ArrayList<Integer>(); ;
+
+        ResolucoesDesafios.numeros
+            .stream()
+            .forEach(n -> {
+                if (n % 2 == 0) {
+                    ret.add(n);
+                }
+            });
+
+        System.out.println("Exercício 4:" + ret);
+
     }
 }
