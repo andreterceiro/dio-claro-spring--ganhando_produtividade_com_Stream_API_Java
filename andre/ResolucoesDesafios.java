@@ -7,8 +7,15 @@ import java.util.List;
  * Please see the exercises in the file src/stream_api/README.md
  */
 class ResolucoesDesafios {
+    /**
+     * Static property to be used in the exercises
+     */
     static List<Integer> numeros = Arrays.asList(4, 2, -1, 5, 3);
 
+    /**
+     * Main method to allow the manual tests
+     * @param args CLI args (ignored)
+     */
     public static void main(String[] args) {
         ResolucoesDesafios.resolucaoExercicio1();
         ResolucoesDesafios.inserirDivisorNaTela();
@@ -34,10 +41,16 @@ class ResolucoesDesafios {
         );
     }
 
+    /**
+     * Insert a visual divisiopn between the solution of the exercises
+     */
     public static void inserirDivisorNaTela() {
         System.out.println("\n-------------------------------------------\n");
     }
 
+    /**
+     * Here we have the solution of the exercise 2
+     */
     public static void resolucaoExercicio2() {
         System.out.println(
             "Exercício 2: " +
@@ -56,6 +69,11 @@ class ResolucoesDesafios {
         );
     }
 
+    /**
+     * Here we have the solution of the exercise 3
+     * After sorting the list of the numbers we need to verify
+     * only the first occurrence
+     */
     public static void resolucaoExercicio3() {
         Object[] numerosOrdenados = ResolucoesDesafios.numeros
             .stream()
@@ -71,6 +89,9 @@ class ResolucoesDesafios {
         );
     }
 
+    /**
+     * Here we have the solution of the exercise 1
+     */
     public static void resolucaoExercicio4() {
         List<Integer> ret = new ArrayList<Integer>(); ;
 
@@ -86,6 +107,11 @@ class ResolucoesDesafios {
 
     }
 
+    /**
+     * Here we have the solution of the exercise 1
+     * First we count the numbers and make the sum
+     * After we execute this calculation: sum/count
+     */
     public static void resolucaoExercicio5() {
         int[] sumToMeanCalculation = {0};
         short[] count = {0};
