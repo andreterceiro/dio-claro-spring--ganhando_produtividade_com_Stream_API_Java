@@ -17,7 +17,7 @@ class ResolucoesDesafios {
     }
 
     /**
-     * Here we have the solution of the exceise 1
+     * Here we have the solution of the exercise 1
      * We did a sum using the same idea in the functional interface binary operator
      */
     public static void resolucaoExercicio1() {
